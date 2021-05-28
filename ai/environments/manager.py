@@ -121,6 +121,10 @@ class Environment:
     def undo(self):
         if len(self.board.move_stack) > 0:
             self.board.pop()
+            if len(self.first_player.type()) > 1:
+                self.board.pop()
+            if len(self.second_player.type()) >1:
+                self.board.pop()
 
     def start(self):
         self.gui.run()
