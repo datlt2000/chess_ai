@@ -14,7 +14,7 @@ After that, alpha-beta will choose best move
 # How to run  
 make sure you cloned my project and have python 3  
 ## Set up library  
-`cd chess_ai`
+`cd chess_ai`  
 `python install -r requirement.txt`  
 
 ## Run
@@ -22,7 +22,7 @@ make sure you cloned my project and have python 3
 
 # Training
 We run training algorithm in colab and save model to predict.  
-Linear model saved in chess_ai/ai/agents/Model/linear_estimator.zip
-neural model saved in chess_ai/ai/agents/Model/dnn_estimator.zip
-To tranform dataset to vector run chess_ai.ai.agents.data_transform.py
-to train linear model run chess_ai.ai.agents.load_data.py
+Linear model saved in chess_ai/ai/agents/Model/linear_estimator.zip  
+neural model saved in chess_ai/ai/agents/Model/dnn_estimator.zip  
+To tranform dataset to vector run chess_ai.ai.agents.data_transform.py  
+to train linear model run chess_ai.ai.agents.load_data.py  
