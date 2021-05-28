@@ -77,8 +77,8 @@ def minimax_with_ml(current_board, depth, alpha, beta, is_maximizing_player, ai_
     # check search depth of alpha beta algorithm and using ML for reduce number of posible moves
     if(depth == 0):
         return - evaluate.basic_eval(current_board, ai_white)
-    elif(depth > 3):
-        legal_moves = predict.find_best_moves(current_board, 0.75)
+    elif(depth >= 2):
+        legal_moves = predict.find_best_moves(current_board, 0.5)
     else:
         legal_moves = list(current_board.legal_moves)
     
